@@ -19,7 +19,7 @@ with open(budget_csv, 'r') as csvfile:
 
     #deal with the exception of the first row using next
     first_row_data = next(csvfile)
-    first_month_pnl = float(first_row_data)
+    first_month_pnl = int(first_row_data)
     total_months = total_months + 1
     total_pnl = total_pnl + first_month_pnl
     previous_month_pnl = first_month_pnl
